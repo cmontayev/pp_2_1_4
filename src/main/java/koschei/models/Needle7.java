@@ -1,9 +1,13 @@
 package koschei.models;
 
-public class Needle7 {
+import org.springframework.beans.factory.annotation.Autowired;
 
-    @Override
+public class Needle7 {
+    @Autowired
+    private Deth8 deth8;
+
+     @Override
     public String toString() {
-        return ", смерть Кощея на игле :( " + "";
+        return "," +deth8.toString()+ " на игле :( " + "";
     }
 }
